@@ -1,4 +1,5 @@
 import 'package:checktrack/screens/HomeScreen.dart';
+import 'package:checktrack/screens/QRCodeScreen.dart';
 import 'package:checktrack/screens/admin/AdminScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomeScreen(),
         '/admin': (context) => AdminScreen(),
+        '/qrcode': (context) => QRViewExample(),
       },
     );
   }
