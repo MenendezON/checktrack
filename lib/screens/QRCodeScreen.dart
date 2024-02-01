@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -22,10 +23,10 @@ class _QRViewExampleState extends State<QRViewExample> {
   @override
   void reassemble() {
     super.reassemble();
-    //if (Platform.isAndroid) {
+    if (Platform.isAndroid) {
       controller!.pauseCamera();
-    //}
-    //controller!.resumeCamera();
+    }
+    controller!.resumeCamera();
   }
 
   @override
